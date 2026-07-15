@@ -25,7 +25,7 @@
     <p>Ich bin Blerina Rexha und ich liebe es, Webseiten zu erstellen. Momentan mache ich eine Weiterbildung in HSH Akademie.</p>
     <h2>Was ich lerne</h2>
     <p>Ich lerne <strong>HTML</strong> und <strong>CSS</strong>. <em>In sechs Monaten bin ich fertig mit der Weiterbildung.</em></p>
-    </section>
+
     
     <h3>Meine Hobbys</h3>
     <ul>
@@ -35,6 +35,7 @@
       <li>Kochen</li>
       <li>Fitness</li>
     </ul>
+
     <h3>Meine Top 3 Skills</h3>
     <ol>
       <li>HTML</li>
@@ -43,16 +44,23 @@
     </ol>
     
     <figure>
-    <img src="bilder/foto.jpeg" alt="Mein Bild" width="200">
+    <img src="bilder/foto.jpg" alt="Porträt von Blerina Rexha" width="200">
     <figcaption>Mein Bild</figcaption>
     </figure>
+    </section>
 
+    <section id="faehigkeiten">
     <table border="1" width="100%">
+
+      <thead>
         <tr>
             <th >Thema</th>
             <th>Kenntnisstand</th>
             <th>Seit wann</th>
         </tr>
+      </thead>
+
+      <tbody>
         <tr>
             <td>HTML</td>
             <td>Grundlagen</td>
@@ -73,7 +81,32 @@
             <td>Grundlagen</td>
             <td>2020</td>
         </tr>
+      </tbody>
     </table>
+    </section>
+
+    <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2"><br>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="city">Wohnort:</label>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="message">Nachricht:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Absenden">
+    </form>
+    </section>
+
   
     </main>
   </body>
