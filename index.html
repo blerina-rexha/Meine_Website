@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     <header>
@@ -50,13 +51,13 @@
     </section>
 
     <section id="faehigkeiten">
-    <table border="1" width="100%">
+    <table>
 
       <thead>
         <tr>
-            <th >Thema</th>
-            <th>Kenntnisstand</th>
-            <th>Seit wann</th>
+            <th scope="col">Thema</th>
+            <th scope="col">Kenntnisstand</th>
+            <th scope="col">Seit wann</th>
         </tr>
       </thead>
 
@@ -72,14 +73,14 @@
             <td>2025</td>
         </tr>
         <tr>
-            <td>Microsoft Word</td>
+            <td>Github</td>
             <td>Fortgeschritten</td>
-            <td>2018</td>
+            <td>2025</td>
         </tr>
         <tr>
-            <td>Microsoft Excel</td>
-            <td>Grundlagen</td>
-            <td>2020</td>
+            <td>Visual Studio Code</td>
+            <td>Gut</td>
+            <td>2026</td>
         </tr>
       </tbody>
     </table>
@@ -100,13 +101,28 @@
         <label for="city">Wohnort:</label>
         <input type="text" id="city" name="city"><br>
 
+         <p><strong>Grund der Kontaktaufnahme:</strong></p>
+
+        <input type="radio" id="frage" name="grund" value="Frage">
+        <label for="frage">Frage</label><br>
+
+        <input type="radio" id="feedback" name="grund" value="Feedback">
+        <label for="feedback">Feedback</label><br>
+
+        <input type="radio" id="zusammenarbeit" name="grund" value="Zusammenarbeit">
+        <label for="zusammenarbeit">Zusammenarbeit</label><br><br>
+
+
         <label for="message">Nachricht:</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
 
         <input type="submit" value="Absenden">
     </form>
     </section>
-
+   
+     <footer>
+     <p>&copy; 2026 Blerina Rexha</p>
+     </footer>
   
     </main>
   </body>
