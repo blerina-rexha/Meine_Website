@@ -67,22 +67,22 @@
 
       <tbody>
         <tr>
-            <td>HTML</td>
+            <th scope="row">HTML</th>
             <td>Grundlagen</td>
             <td>2026</td>
         </tr>
         <tr>
-            <td>CSS</td>
+            <th scope="row">CSS</th>
             <td>Einsteiger</td>
             <td>2025</td>
         </tr>
         <tr>
-            <td>Github</td>
+            <th scope="row">Github</th>
             <td>Fortgeschritten</td>
             <td>2025</td>
         </tr>
         <tr>
-            <td>Visual Studio Code</td>
+            <th scope="row">Visual Studio Code</th>
             <td>Gut</td>
             <td>2026</td>
         </tr>
@@ -93,32 +93,39 @@
     <section id="kontakt">
     <h2>Kontakt</h2>
     <form>
+        <div class="form-group">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required minlength="2"><br>
+        <input type="text" id="name" name="name" required minlength="2"></div>
 
+        <div class="form-group">
         <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" required></div>
 
+        <div class="form-group">
         <label for="phone">Telefonnummer:</label>
-        <input type="tel" id="phone" name="phone"><br>
+        <input type="tel" id="phone" name="phone"></div>
 
+        <div class="form-group">
         <label for="city">Wohnort:</label>
-        <input type="text" id="city" name="city"><br>
+        <input type="text" id="city" name="city"></div>
 
-         <p><strong>Grund der Kontaktaufnahme:</strong></p>
+        <div class="form-group">
+        <p><strong>Grund der Kontaktaufnahme:</strong></p>
 
         <input type="radio" id="frage" name="grund" value="Frage">
-        <label for="frage">Frage</label><br>
+        <label for="frage">Frage</label>
 
         <input type="radio" id="feedback" name="grund" value="Feedback">
-        <label for="feedback">Feedback</label><br>
+        <label for="feedback">Feedback</label>
 
         <input type="radio" id="zusammenarbeit" name="grund" value="Zusammenarbeit">
-        <label for="zusammenarbeit">Zusammenarbeit</label><br><br>
+        <label for="zusammenarbeit">Zusammenarbeit</label>
+        </div>
 
-
-        <label for="message">Nachricht:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <div class="form-group">
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </div>
 
         <input type="submit" value="Absenden">
     </form>
