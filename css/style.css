@@ -172,3 +172,12 @@ footer {
     margin: 0;
     font-size: 1.8rem;
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
